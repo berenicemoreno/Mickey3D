@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Cámara centrada y mirando hacia los objetos -->
+    <a-camera position="0 1.6 5" look-controls="enabled"></a-camera>
+
+    <!-- Esferas centradas para que sean el punto focal -->
+    <a-sphere position="0 1.5 -5" radius="1.5" color="#000000"></a-sphere>
+    <a-sphere position="-1.5 3 -5" radius="1.25" color="#000000"></a-sphere>
+    <a-sphere position="1.5 3 -5" radius="1.25" color="#000000"></a-sphere>
+
+    <!-- Plano más grande debajo -->
+    <a-plane position="0 0 -5" rotation="-90 0 0" width="20" height="20" color="#FF0000"></a-plane>
+
+    <!-- Cielo azul claro -->
+    <a-sky color="#87CEEB"></a-sky>
+
+    <!-- Iluminación ambiental -->
+    <a-light type="ambient" color="#ffffff"></a-light>
+    <a-light type="point" position="0 4 0" color="#FF6347" intensity="1"></a-light>
+  </a-scene>
+</body>
+</html>
+
